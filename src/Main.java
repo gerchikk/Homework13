@@ -16,5 +16,13 @@ public class Main {
         System.out.println("Внесены изменения:");
         System.out.println(maskarad);
         division();
+        Author lermontov1 = new Author("Михаил", "Лермонтов");
+        Book maskarad1 = new Book("Маскарад", lermontov1, 1834);
+        System.out.println(lermontov.equals(lermontov1));
+        System.out.println(maskarad.equals(maskarad1));
+        System.out.println(lermontov.hashCode());
+        System.out.println(lermontov1.hashCode());
+        System.out.println(maskarad.hashCode());
+        System.out.println(maskarad1.hashCode());
     }
 }
